@@ -37,6 +37,7 @@ public class RVMaestroAdapter extends RecyclerView.Adapter<RVMaestroAdapter.RVMe
         rvMessageAdapterViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(context, Vistas.class);
                 context.startActivity(intent);
             }

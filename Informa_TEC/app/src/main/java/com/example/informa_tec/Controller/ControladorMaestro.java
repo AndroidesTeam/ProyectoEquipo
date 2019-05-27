@@ -26,7 +26,7 @@ public class ControladorMaestro extends AppCompatActivity {
         maestros.add(new ModeloMaestro("Julian", "Morales", "Gonzalez"));
         maestros.add(new ModeloMaestro("Jaime", "Mendoza", "Gomez"));
         maestros.add(new ModeloMaestro("Josue", "Mares", "Gutierrez"));
-    recyclerView = findViewById(R.id.rv_materia);
+    recyclerView = findViewById(R.id.rv_maestro);
 
     adapter = new RVMaestroAdapter(this, maestros);
         recyclerView.setAdapter(adapter);

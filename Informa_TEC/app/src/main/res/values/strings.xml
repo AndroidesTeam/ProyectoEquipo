@@ -8,4 +8,7 @@
     <string name="evaluacion">Evaluar</string>
     <string name="salir">Salir</string>
     <string name="title_activity_vistas">Vistas</string>
+    <string name="title_activity_semestre">Semestre</string>
+    <string name="title_activity_materia">Materia</string>
+    <string name="title_activity_maestro">Maestro</string>
 </resources>

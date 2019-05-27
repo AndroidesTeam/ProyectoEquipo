@@ -20,15 +20,15 @@ public class ControladorSemestre extends AppCompatActivity {
 
         List<ModeloSemestre> semestres = new ArrayList<>();
 
-        semestres.add(new ModeloSemestre("Semestre 1"));
-        semestres.add(new ModeloSemestre("Semestre 2"));
-        semestres.add(new ModeloSemestre("Semestre 3"));
-        semestres.add(new ModeloSemestre("Semestre 4"));
-        semestres.add(new ModeloSemestre("Semestre 5"));
-        semestres.add(new ModeloSemestre("Semestre 6"));
-        semestres.add(new ModeloSemestre("Semestre 7"));
-        semestres.add(new ModeloSemestre("Semestre 8"));
-        semestres.add(new ModeloSemestre("Semestre 9"));
+        semestres.add(new ModeloSemestre("1ro"));
+        semestres.add(new ModeloSemestre("2do"));
+        semestres.add(new ModeloSemestre("3ro"));
+        semestres.add(new ModeloSemestre("4to"));
+        semestres.add(new ModeloSemestre("5to"));
+        semestres.add(new ModeloSemestre("6to"));
+        semestres.add(new ModeloSemestre("7mo"));
+        semestres.add(new ModeloSemestre("8vo"));
+        semestres.add(new ModeloSemestre("9no"));
         recyclerView = findViewById(R.id.rv_semestre);
 
         adapter = new RVSemestreAdapter(this, semestres);
