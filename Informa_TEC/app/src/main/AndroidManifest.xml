@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        <activity android:name=".Vistas"></activity>
+        <activity android:name=".Controller.ControladorMaestro"></activity>
+        <activity android:name=".Controller.ControladorMateria" />
+        <activity android:name=".Controller.ControladorSemestre" />
+        <activity android:name=".Vistas" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

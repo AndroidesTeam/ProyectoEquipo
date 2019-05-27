@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.informa_tec.Controller.ControladorSemestre;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View vista) {
-        Intent intent = new Intent(this, Vistas.class);
+        Intent intent = new Intent(this, ControladorSemestre.class);
         startActivity(intent);
     }
 }
