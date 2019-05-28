@@ -11,4 +11,66 @@
     <string name="title_activity_semestre">Semestre</string>
     <string name="title_activity_materia">Materia</string>
     <string name="title_activity_maestro">Maestro</string>
+    <string name="title_fragment_perfil">Perfil del Maestro</string>
+    <string name="p1">¿Qué criterios se califican en la materia?</string>
+    <string name="p2">¿De que manera es impartida la clase?</string>
+    <string name="p3">¿Cómo calificas el conocimiento del profesor en la materia?</string>
+    <string name="p4">¿Cómo calificas la manera en la que el profesor imparte la clase?</string>
+    <string name="p5">Indica la personalidad del profesor</string>
+    <string name="p6">¿Cómo calificas la asistencia y puntualidad del profesor?</string>
+    <string name="p7">¿Qué dificultad tienen los examenes?</string>
+    <string name="p8">¿Qué cantidad de tareas deja el profesor?</string>
+    <string name="p9">En general ¿Cómo calificas el desempeño del profesor?</string>
+    <string name="p10">Agrega algún comentario</string>
+
+    <string name="np">NPV</string>
+    <string name="porcentaje">%</string>
+
+    <string name="p1R1">Asistencia</string>
+    <string name="p1R2">Proyecto</string>
+    <string name="p1R3">Portafolio</string>
+    <string name="p1R4">Examen</string>
+    <string name="p1R5">Tareas</string>
+    <string name="p1R6">Exposiciones</string>
+
+    <string name="p2R1">Teórico</string>
+    <string name="p2R2">Por Exposición</string>
+    <string name="p2R3">Práctico</string>
+    <string name="p2R4">Teórico-Práctico</string>
+
+    <string name="p3R1">Básico</string>
+    <string name="p3R2">Adecuado</string>
+    <string name="p3R3">Alto</string>
+    <string name="p3R4">Avanzado</string>
+
+    <string name="p4R1">Aburrida</string>
+    <string name="p4R2">Regular</string>
+    <string name="p4R3">Interesante</string>
+    <string name="p4R4">Muy Interesante</string>
+
+    <string name="p5R1">Muy Flexible y paciente</string>
+    <string name="p5R2">Moderado</string>
+    <string name="p5R3">Exigente</string>
+    <string name="p5R4">Estricto y poco paciente</string>
+
+    <string name="p6R1">Falta muy seguido</string>
+    <string name="p6R2">En ocasiones falta</string>
+    <string name="p6R3">Suele llegar tarde</string>
+    <string name="p6R4">Nunca Falta</string>
+
+    <string name="p7R1">No deja examenes</string>
+    <string name="p7R2">Faciles</string>
+    <string name="p7R3">Regular</string>
+    <string name="p7R4">Difíciles</string>
+
+    <string name="p8R1">No encarga tarea</string>
+    <string name="p8R2">Poca tarea</string>
+    <string name="p8R3">Regular</string>
+    <string name="p8R4">Mucha tarea</string>
+
+    <string name="p9R1">Pésimo</string>
+    <string name="p9R2">Malo</string>
+    <string name="p9R3">Regular</string>
+    <string name="p9R4">Bueno</string>
+    <string name="p9R5">Excelente</string>
 </resources>
