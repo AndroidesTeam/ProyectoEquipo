@@ -46,7 +46,11 @@ public class RVMaestroAdapter extends RecyclerView.Adapter<RVMaestroAdapter.RVMe
 
     @Override
     public int getItemCount() {
-        return maestros.size();
+        try{
+            return maestros.size();
+        }catch (Exception e){
+            return 0;
+        }
     }
 
     public class RVMessageAdapterViewHolder extends RecyclerView.ViewHolder {

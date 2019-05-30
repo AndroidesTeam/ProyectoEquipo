@@ -29,12 +29,13 @@ public class MainActivity extends AppCompatActivity {
     private EditText usuario, clave;
     private Button btn_login;
     private Queue queue;
+    private String usuarioMandar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        queue =Queue.getInstance(this);
         usuario = (EditText) findViewById(R.id.usuario);
         clave = (EditText) findViewById(R.id.clave);
         btn_login = (Button) findViewById(R.id.login);
@@ -67,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("usuario", String.valueOf(usuario.getText()));
-                params.put("clave", String.valueOf(clave.getText()));
+                usuarioMandar=String.valueOf(usuario.getText());
+                params.put("email", usuarioMandar);
+                params.put("password", String.valueOf(clave.getText()));
                 return params;
             }
         };
@@ -76,11 +78,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void responseHandler(String res) {
+        //Toast.makeText(this, res, Toast.LENGTH_SHORT).show();
         try {
             JSONObject response = new JSONObject(res);
             boolean r = (boolean) response.getBoolean("success");
             if (r) {
-                startActivity(new Intent(getApplicationContext(), ControladorSemestre.class));
+                Intent enviar=new Intent(getApplicationContext(),ControladorSemestre.class);
+                enviar.putExtra("usuario",usuarioMandar);
+                startActivity(enviar);
             }
         } catch (JSONException e1) {
             e1.printStackTrace();

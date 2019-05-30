@@ -38,7 +38,12 @@ public class RVComentariosAdapter extends RecyclerView.Adapter<RVComentariosAdap
 
     @Override
     public int getItemCount() {
-        return comentarios.size();
+        try{
+            return comentarios.size();
+        }catch (Exception e){
+            return 0;
+        }
+
     }
 
     public class RVMessageAdapterViewHolder extends RecyclerView.ViewHolder {

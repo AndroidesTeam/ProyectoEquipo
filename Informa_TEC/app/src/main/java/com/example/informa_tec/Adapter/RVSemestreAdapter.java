@@ -45,7 +45,12 @@ public class RVSemestreAdapter extends RecyclerView.Adapter<RVSemestreAdapter.RV
 
     @Override
     public int getItemCount() {
-        return semestres.size();
+
+        try{
+            return semestres.size();
+        }catch (Exception e){
+            return 0;
+        }
     }
 
     public class RVMessageAdapterViewHolder extends RecyclerView.ViewHolder {
