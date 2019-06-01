@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     public void login() {
         StringRequest request = new StringRequest(
                 Request.Method.POST,
-                "http://192.168.1.104:8000/api/auth/login",
+                "http://192.168.1.67:8000/api/auth/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
