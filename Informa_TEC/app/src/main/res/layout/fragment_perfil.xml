@@ -1865,66 +1865,6 @@
             </TableRow>
 
             <TableRow
-                android:id="@+id/SeparadorP9_R1"
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="0.3"
-                android:gravity="center_horizontal">
-
-                <RadioButton
-                    android:id="@+id/rb_p9_R1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.5"
-                    android:checked="true"
-                    android:text="@string/p9R1"
-                    android:textSize="17dp" />
-
-                <EditText
-                    android:id="@+id/et_p9_r1_np"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p9_r1_np"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.1"
-                    android:text="@string/np"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
-
-
-                <EditText
-                    android:id="@+id/et_p9_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p9_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
-
-            </TableRow>
-
-            <TableRow
                 android:id="@+id/SeparadorP9_R2"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"

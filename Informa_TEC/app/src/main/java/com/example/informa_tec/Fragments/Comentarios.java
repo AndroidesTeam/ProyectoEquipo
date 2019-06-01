@@ -1,5 +1,6 @@
 package com.example.informa_tec.Fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -17,6 +18,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.informa_tec.Adapter.RVComentariosAdapter;
+import com.example.informa_tec.Modelo.Datos;
 import com.example.informa_tec.Modelo.ModeloComentarios;
 import com.example.informa_tec.R;
 
@@ -36,7 +38,16 @@ public class Comentarios extends Fragment {
     private RVComentariosAdapter adapter;
     List<ModeloComentarios> comentarios;
     private Queue queue;
-    private String curso;
+    private int curso;
+    private Datos datosObtenidos;
+
+    public Comentarios(){
+
+    }
+    @SuppressLint("ValidFragment")
+    public Comentarios(Datos datosObtenidos){
+     this.datosObtenidos=datosObtenidos;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -45,7 +56,7 @@ public class Comentarios extends Fragment {
         recyclerView = vista.findViewById(R.id.rv_comentarios);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        curso=getActivity().getIntent().getExtras().getString("curso");
+        curso=datosObtenidos.getId_curso();
         llenarLista();
         return vista;
     }
