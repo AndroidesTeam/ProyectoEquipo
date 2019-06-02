@@ -31,6 +31,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Evaluar extends Fragment{
+    private TextView titulo;
+
     private LinearLayout options,evaluar;
     private Queue queue;
     private Datos datosObtenidos;
@@ -49,6 +51,7 @@ public class Evaluar extends Fragment{
         View view = inflater.inflate(R.layout.fragment_evaluar, container, false);
         options = (LinearLayout) view.findViewById(R.id.options);
         evaluar = (LinearLayout) view.findViewById(R.id.evaluar);
+        titulo = (TextView) view.findViewById(R.id.titulo);
 
         queue = Queue.getInstance(getContext());
 
@@ -67,9 +70,11 @@ public class Evaluar extends Fragment{
                         try {
                             JSONObject result = new JSONObject(response);
                             if(result.getBoolean("success")){
+                                titulo.setText("Evaluación realizada");
                                 options.setVisibility(View.VISIBLE);
                                 evaluar.setVisibility(View.GONE);
                             }else{
+                                titulo.setText("Evalua el curso");
                                 options.setVisibility(View.GONE);
                                 evaluar.setVisibility(View.VISIBLE);
                             }
