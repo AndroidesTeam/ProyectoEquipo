@@ -96,10 +96,8 @@ public class ControladorMaestro extends AppCompatActivity {
                 for (int i = 0, e = response.length(); i < e; i++) {
                     JSONObject maestro;
                     maestro = (JSONObject) response.get(i);
-                    int id_curso=Integer.parseInt(maestro.get("id").toString());
 
-                    datosObtenidos.setId_curso(Integer.parseInt(maestro.get("id").toString()));
-
+                    //datosObtenidos.setId_curso(Integer.parseInt(maestro.get("id").toString()));
                     int id_maestro=Integer.parseInt(maestro.get("id_profesor").toString());
                     String nombre = maestro.get("nombre").toString();
                     String apellidoP = maestro.get("ap_paterno").toString();

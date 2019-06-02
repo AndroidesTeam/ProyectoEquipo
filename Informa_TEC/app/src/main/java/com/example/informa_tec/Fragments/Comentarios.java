@@ -64,7 +64,7 @@ public class Comentarios extends Fragment {
     private void llenarLista() {
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                "http://10.55.111.57:8000/api/comentario/comentarios-profesor?id_curso="+this.curso,
+                "http://192.168.1.104:8000/api/comentario/comentarios-profesor?id_curso="+this.curso,
                 new Response.Listener<String>() {
                     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
