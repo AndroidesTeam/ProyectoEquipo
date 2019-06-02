@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -25,14 +27,13 @@ import com.example.informa_tec.Servicio.Queue;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Evaluar extends Fragment{
     private TextView titulo;
-
+    private RadioGroup pregunta1,pregunta2,pregunta3,pregunta4,pregunta5,pregunta6,pregunta7,pregunta8;
     private LinearLayout options,evaluar;
     private Queue queue;
     private Datos datosObtenidos;
@@ -52,6 +53,16 @@ public class Evaluar extends Fragment{
         options = (LinearLayout) view.findViewById(R.id.options);
         evaluar = (LinearLayout) view.findViewById(R.id.evaluar);
         titulo = (TextView) view.findViewById(R.id.titulo);
+        pregunta1 = (RadioGroup) view.findViewById(R.id.pregunta1);
+        pregunta2 = (RadioGroup) view.findViewById(R.id.pregunta2);
+        pregunta3 = (RadioGroup) view.findViewById(R.id.pregunta3);
+        pregunta4 = (RadioGroup) view.findViewById(R.id.pregunta4);
+        pregunta5 = (RadioGroup) view.findViewById(R.id.pregunta5);
+        pregunta6 = (RadioGroup) view.findViewById(R.id.pregunta6);
+        pregunta7 = (RadioGroup) view.findViewById(R.id.pregunta7);
+        pregunta8 = (RadioGroup) view.findViewById(R.id.pregunta8);
+
+        setEvents();
 
         queue = Queue.getInstance(getContext());
 
@@ -102,4 +113,62 @@ public class Evaluar extends Fragment{
         queue.addToQueue(request);
     }
 
+    public void setEvents(){
+        pregunta1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta1.findViewById(pregunta1.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta1.indexOfChild(selected)+1));
+            }
+        });
+        pregunta2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta2.findViewById(pregunta2.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta2.indexOfChild(selected)+1));
+            }
+        });
+        pregunta3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta3.findViewById(pregunta3.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta3.indexOfChild(selected)+1));
+            }
+        });
+        pregunta4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta4.findViewById(pregunta4.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta4.indexOfChild(selected)+1));
+            }
+        });
+        pregunta5.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta5.findViewById(pregunta5.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta5.indexOfChild(selected)+1));
+            }
+        });
+        pregunta6.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta6.findViewById(pregunta6.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta6.indexOfChild(selected)+1));
+            }
+        });
+        pregunta7.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta7.findViewById(pregunta7.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta7.indexOfChild(selected)+1));
+            }
+        });
+        pregunta8.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton selected = (RadioButton) pregunta8.findViewById(pregunta8.getCheckedRadioButtonId());
+                Log.d("prueba",String.valueOf(pregunta8.indexOfChild(selected)+1));
+            }
+        });
+    }
 }

@@ -29,7 +29,7 @@
 
                     <TextView
                         android:id="@+id/titulo"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
                         android:background="@color/cafe"
@@ -38,8 +38,6 @@
                         android:textSize="24sp" />
 
                 </TableRow>
-
-
                 <TableRow
                     android:id="@+id/SeparadorP2"
                     android:layout_width="fill_parent"
@@ -57,7 +55,6 @@
                         android:textSize="17dp" />
 
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP2_R1"
                     android:layout_width="fill_parent"
@@ -68,7 +65,9 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta1"
+                        >
                         <RadioButton
                             android:id="@+id/rb_p2_R1"
                             android:layout_width="match_parent"
@@ -117,7 +116,6 @@
                         android:textSize="17dp" />
 
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP3_R1"
                     android:layout_width="fill_parent"
@@ -128,7 +126,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta2">
                         <RadioButton
                             android:id="@+id/rb_p3_R1"
                             android:layout_width="match_parent"
@@ -177,7 +176,6 @@
                         android:textSize="17dp" />
 
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP4_R1"
                     android:layout_width="fill_parent"
@@ -188,7 +186,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta3">
                         <RadioButton
                             android:id="@+id/rb_p4_R1"
                             android:layout_width="match_parent"
@@ -237,7 +236,6 @@
                         android:textSize="17dp" />
 
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP5_R1"
                     android:layout_width="fill_parent"
@@ -248,7 +246,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta4">
                         <RadioButton
                             android:id="@+id/rb_p5_R1"
                             android:layout_width="match_parent"
@@ -280,7 +279,6 @@
                             android:textSize="17dp" />
                     </RadioGroup>
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP6"
                     android:layout_width="fill_parent"
@@ -298,7 +296,6 @@
                         android:textSize="17dp" />
 
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP6_R1"
                     android:layout_width="fill_parent"
@@ -309,7 +306,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta5">
                         <RadioButton
                             android:id="@+id/rb_p6_R1"
                             android:layout_width="match_parent"
@@ -358,7 +356,6 @@
                         android:textSize="17dp" />
 
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP7_R1"
                     android:layout_width="fill_parent"
@@ -369,7 +366,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta6">
                         <RadioButton
                             android:id="@+id/rb_p7_R1"
                             android:layout_width="match_parent"
@@ -416,9 +414,7 @@
                         android:text="@string/p8"
                         android:textColor="@android:color/white"
                         android:textSize="17dp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP8_R1"
                     android:layout_width="fill_parent"
@@ -429,7 +425,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta7">
                         <RadioButton
                             android:id="@+id/rb_p8_R1"
                             android:layout_width="match_parent"
@@ -476,9 +473,7 @@
                         android:text="@string/p9"
                         android:textColor="@android:color/white"
                         android:textSize="17dp" />
-
                 </TableRow>
-
                 <TableRow
                     android:id="@+id/SeparadorP9_R2"
                     android:layout_width="fill_parent"
@@ -489,7 +484,8 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/pregunta8">
                         <RadioButton
                             android:id="@+id/rb_p9_R2"
                             android:layout_width="match_parent"
