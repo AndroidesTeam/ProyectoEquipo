@@ -9,9 +9,18 @@ public class Datos implements Serializable {
     private int materia;
     private int maestro;
     private int id_curso;
+    private int id_usuario;
 
     public Datos(){
 
+    }
+
+    public int getId_usuario() {
+        return id_usuario;
+    }
+
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
     public int getId_curso() {
@@ -21,8 +30,6 @@ public class Datos implements Serializable {
     public void setId_curso(int id_curso) {
         this.id_curso = id_curso;
     }
-
-
 
     public String getUsuario() {
         return usuario;

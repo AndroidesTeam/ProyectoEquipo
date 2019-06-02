@@ -5,12 +5,2143 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.Evaluar"
     android:background="@color/negroOpaco">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/negroOpaco">
+
+                <TableRow
+                    android:id="@+id/SeparadorTitulo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.12"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewTitulo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@color/cafe"
+                        android:gravity="center_horizontal"
+                        android:text="¡Ya haz evaluado el curso!"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp" />
+
+                </TableRow>
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:text="Evaluacion"/>
+                <TableRow
+                    android:id="@+id/SeparadorP2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p2"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP2_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p2_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p2R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p2_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p2_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP2_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p2_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p2R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p2_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p2_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP2_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p2_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p2R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p2_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p2_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP2_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p2_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p2R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p2_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p2_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p2_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p3"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP3_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p3_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p3R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p3_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p3_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP3_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p3_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p3R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p3_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p3_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP3_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p3_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p3R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p3_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p3_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP3_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p3_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p3R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p3_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p3_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p3_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p4"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP4_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p4_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p4R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p4_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p4_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP4_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p4_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p4R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p4_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p4_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP4_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p4_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p4R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p4_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p4_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP4_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p4_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p4R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p4_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p4_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p4_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p5"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP5_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p5_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p5R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p5_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p5_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP5_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p5_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p5R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p5_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p5_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP5_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p5_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p5R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p5_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p5_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP5_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_P5_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p5R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p5_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p5_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p5_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p6"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP6_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p6_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p6R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p6_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p6_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP6_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p6_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p6R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p6_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p6_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP6_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p6_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p6R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p6_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p6_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP6_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p6_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p6R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p6_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p6_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p6_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p7"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP7_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p7_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p7R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p7_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p7_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP7_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p7_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p7R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p7_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p7_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP7_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p7_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p7R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p7_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p7_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP7_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p7_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p7R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p7_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p7_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p7_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p8"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP8_R1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p8_R1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p8R1"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p8_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r1_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p8_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r1_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP8_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p8_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p8R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p8_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p8_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP8_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p8_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p8R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p8_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p8_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP8_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p8_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p8R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p8_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p8_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p8_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/TextViewP9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/p9"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP9_R2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p9_R2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p9R2"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p9_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r2_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p9_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r2_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP9_R3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p9_R3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p9R3"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p9_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r3_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p9_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r3_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP9_R4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p9_R4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p9R4"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p9_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r4_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p9_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r4_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorP9_R5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_p9_R5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/p9R5"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/et_p9_r5_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r5_np"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.1"
+                        android:text="@string/np"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+
+                    <EditText
+                        android:id="@+id/et_p9_r5_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:background="@android:color/background_light"
+                        android:enabled="false"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/tv_p9_r5_porcen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="@string/porcentaje"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/evaluar">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluar"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/options">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modificar"
+                    android:textSize="20dp"
+                    android:id="@+id/modificar"
+                    android:textColor="@android:color/white"
+                    />
+                <Button
+                    android:id="@+id/eliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
 </FrameLayout>

@@ -3,6 +3,7 @@ package com.example.informa_tec;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import android.widget.Button;
@@ -14,6 +15,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.informa_tec.Modelo.Conexion;
 import com.example.informa_tec.Servicio.Queue;
 
 import org.json.JSONException;
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void login() {
         StringRequest request = new StringRequest(
                 Request.Method.POST,
-                "http://192.168.1.104:8000/api/auth/login",
+                Conexion.servidor+"auth/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -81,9 +83,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject response = new JSONObject(res);
             boolean r = (boolean) response.getBoolean("success");
+            JSONObject result = response.getJSONObject("result");
             if (r) {
                 Intent enviar=new Intent(getApplicationContext(),ControladorSemestre.class);
                 enviar.putExtra("usuario",usuarioMandar);
+                int id_usuario = result.getInt("id");
+                enviar.putExtra("id_usuario",id_usuario);
                 startActivity(enviar);
             }
         } catch (JSONException e1) {

@@ -1,5 +1,6 @@
 package com.example.informa_tec;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -8,6 +9,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -19,6 +21,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.example.informa_tec.Fragments.Comentarios;
 import com.example.informa_tec.Fragments.Evaluar;
 import com.example.informa_tec.Fragments.Perfil;
+import com.example.informa_tec.Modelo.Conexion;
 import com.example.informa_tec.Modelo.Datos;
 import com.example.informa_tec.Servicio.Queue;
 
@@ -33,29 +36,27 @@ public class Vistas extends AppCompatActivity {
 
     private Datos datosObtenidos;
     private Queue queue;
-
+    private Context contexto;
+    private Fragment fragmentSeleccionado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistas);
         queue = Queue.getInstance(this);
-
+        contexto = getBaseContext();
         final Bundle objetoEnviado = getIntent().getExtras();
         datosObtenidos = (Datos) objetoEnviado.getSerializable("datos"); //no se si este bien
         llenarLista();
 
-
         BottomNavigationView bottomBar = findViewById(R.id.bottombar);
         final Intent intent = new Intent(this, MainActivity.class);
-
-        Fragment fragmentSeleccionado = new Perfil();
+        fragmentSeleccionado = new Perfil();
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragmentSeleccionado).commit();
 
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                Fragment fragmentSeleccionado = null;
                 switch (menuItem.getItemId()) {
                     case R.id.item_perfil:
                         fragmentSeleccionado = new Perfil();
@@ -64,7 +65,8 @@ public class Vistas extends AppCompatActivity {
                         fragmentSeleccionado = new Comentarios(datosObtenidos);
                         break;
                     case R.id.item_evaluacion:
-                        fragmentSeleccionado = new Evaluar();
+                        //ejecutar el metodo
+                        fragmentSeleccionado = new Evaluar(datosObtenidos);
                         break;
                     case R.id.item_salir:
                         startActivity(intent);
@@ -80,7 +82,9 @@ public class Vistas extends AppCompatActivity {
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                "http://192.168.1.104:8000/api/curso/mostrar?id_profesor=" + datosObtenidos.getMaestro() + "& id_materia=" + datosObtenidos.getMateria(),
+                Conexion.servidor+"curso/mostrar?id_profesor="
+                        + datosObtenidos.getMaestro()
+                        + "&id_materia=" + datosObtenidos.getMateria(),
                 new Response.Listener<String>() {
                    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
@@ -104,7 +108,6 @@ public class Vistas extends AppCompatActivity {
         queue.addToQueue(request);
 
     }
-
     public void responseHandler(String res) {
         try {
             JSONObject response = new JSONObject(res);
@@ -118,11 +121,15 @@ public class Vistas extends AppCompatActivity {
             e.printStackTrace();
         }
         Toast toast1 = Toast.makeText(getApplicationContext(),
-             "maestro: " + datosObtenidos.getMaestro() + " materia: " + datosObtenidos.getMateria() + " curso: " + datosObtenidos.getId_curso(), Toast.LENGTH_LONG);
+             "maestro: " + datosObtenidos.getMaestro()
+                     + " materia: " + datosObtenidos.getMateria()
+                     + " curso: " + datosObtenidos.getId_curso()
+                        +"Id Usuario:"+ datosObtenidos.getId_usuario(), Toast.LENGTH_LONG);
       toast1.show();
     }
 
     public void errorHandler(VolleyError error) {
-        Toast.makeText(this, "No hay cursos", Toast.LENGTH_SHORT).show();
+        Log.d("CALAAANDOOOOO",error.getMessage());
+        //Toast.makeText(this, "No hay cursos", Toast.LENGTH_SHORT).show();
     }
 }

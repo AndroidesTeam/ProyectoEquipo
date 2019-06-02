@@ -25,7 +25,7 @@ public class ControladorSemestre extends AppCompatActivity {
         usr=getIntent().getExtras().getString("usuario");
         Datos datosObtenidos =new Datos();
         datosObtenidos.setUsuario(usr);
-
+        datosObtenidos.setId_usuario(getIntent().getExtras().getInt("id_usuario"));
         semestres.add(new ModeloSemestre("1"));
         semestres.add(new ModeloSemestre("2"));
         semestres.add(new ModeloSemestre("3"));

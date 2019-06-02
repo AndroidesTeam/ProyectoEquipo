@@ -7,6 +7,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.informa_tec.Adapter.RVComentariosAdapter;
+import com.example.informa_tec.Modelo.Conexion;
 import com.example.informa_tec.Modelo.Datos;
 import com.example.informa_tec.Modelo.ModeloComentarios;
 import com.example.informa_tec.R;
@@ -64,7 +66,7 @@ public class Comentarios extends Fragment {
     private void llenarLista() {
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                "http://192.168.1.104:8000/api/comentario/comentarios-profesor?id_curso="+this.curso,
+                Conexion.servidor +"comentario/comentarios-profesor?id_curso="+this.curso,
                 new Response.Listener<String>() {
                     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
