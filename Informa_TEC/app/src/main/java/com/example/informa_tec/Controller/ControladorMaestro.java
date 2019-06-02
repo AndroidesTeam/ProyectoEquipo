@@ -14,6 +14,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.informa_tec.Adapter.RVMaestroAdapter;
+import com.example.informa_tec.Modelo.Conexion;
 import com.example.informa_tec.Modelo.Datos;
 import com.example.informa_tec.Modelo.ModeloMaestro;
 import com.example.informa_tec.R;
@@ -57,7 +58,7 @@ public class ControladorMaestro extends AppCompatActivity {
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                "http://192.168.1.104:8000/api/profesor/listar?id_materia=" + this.id_materia,
+                Conexion.servidor +"profesor/listar?id_materia=" + this.id_materia,
                 new Response.Listener<String>() {
                     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override

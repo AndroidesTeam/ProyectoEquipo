@@ -14,6 +14,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.informa_tec.Modelo.Conexion;
 import com.example.informa_tec.Servicio.Queue;
 
 import org.json.JSONException;
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public void login() {
         StringRequest request = new StringRequest(
                 Request.Method.POST,
-                "http://192.168.1.67:8000/api/auth/login",
+                Conexion.servidor +"auth/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
