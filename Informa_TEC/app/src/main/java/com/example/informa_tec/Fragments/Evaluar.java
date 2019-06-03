@@ -152,7 +152,7 @@ public class Evaluar extends Fragment{
         Log.d("prueba",String.valueOf(pregunta8.indexOfChild(selected)+1));
     }
 
-    public void evaluar(int action){
+    public void evaluar(final int action){
         String peticion= "";
         if(action==0){
             peticion = Conexion.servidor +"evaluacion/insertar";
@@ -169,6 +169,13 @@ public class Evaluar extends Fragment{
                         titulo.setText("Evaluación realizada");
                         options.setVisibility(View.VISIBLE);
                         evaluarL.setVisibility(View.GONE);Log.d("insertado",response.toString());
+                        if(action==1){
+                            Toast eliminar = Toast.makeText(getContext(),"Evaluacion modificada", Toast.LENGTH_SHORT);
+                            eliminar.show();
+                        }else if(action==0){
+                            Toast eliminar = Toast.makeText(getContext(),"Evaluacion realizada", Toast.LENGTH_SHORT);
+                            eliminar.show();
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -308,6 +315,7 @@ public class Evaluar extends Fragment{
                         pregunta8.clearCheck();
                         comentario.setText("");
                         Toast eliminar = Toast.makeText(getContext(),"Evaluacion eliminada", Toast.LENGTH_SHORT);
+                        eliminar.show();
                     }
                 },
                 new Response.ErrorListener() {
