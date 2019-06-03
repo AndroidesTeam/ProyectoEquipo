@@ -51,15 +51,13 @@ public class Vistas extends AppCompatActivity {
 
         BottomNavigationView bottomBar = findViewById(R.id.bottombar);
         final Intent intent = new Intent(this, MainActivity.class);
-        fragmentSeleccionado = new Perfil();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragmentSeleccionado).commit();
 
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.item_perfil:
-                        fragmentSeleccionado = new Perfil();
+                        fragmentSeleccionado = new Perfil(datosObtenidos);
                         break;
                     case R.id.item_comentarios:
                         fragmentSeleccionado = new Comentarios(datosObtenidos);
@@ -72,6 +70,7 @@ public class Vistas extends AppCompatActivity {
                         startActivity(intent);
                         return true;
                 }
+
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragmentSeleccionado).commit();
                 return true;
             }
@@ -82,11 +81,11 @@ public class Vistas extends AppCompatActivity {
 
         StringRequest request = new StringRequest(
                 Request.Method.GET,
-                Conexion.servidor+"curso/mostrar?id_profesor="
+                Conexion.servidor + "curso/mostrar?id_profesor="
                         + datosObtenidos.getMaestro()
                         + "&id_materia=" + datosObtenidos.getMateria(),
                 new Response.Listener<String>() {
-                   @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+                    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
                     public void onResponse(String response) {
                         responseHandler(response);
@@ -108,28 +107,27 @@ public class Vistas extends AppCompatActivity {
         queue.addToQueue(request);
 
     }
+
     public void responseHandler(String res) {
         try {
             JSONObject response = new JSONObject(res);
             JSONObject responseR = response.getJSONObject("result");
             boolean r = (boolean) response.getBoolean("success");
-           if (r) {
-               int id_curso = responseR.getInt("id");
+            if (r) {
+                int id_curso = responseR.getInt("id");
                 datosObtenidos.setId_curso(id_curso);
+                fragmentSeleccionado = new Perfil(datosObtenidos);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragmentSeleccionado).commit();
+
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Toast toast1 = Toast.makeText(getApplicationContext(),
-             "maestro: " + datosObtenidos.getMaestro()
-                     + " materia: " + datosObtenidos.getMateria()
-                     + " curso: " + datosObtenidos.getId_curso()
-                        +"Id Usuario:"+ datosObtenidos.getId_usuario(), Toast.LENGTH_LONG);
-      toast1.show();
+
     }
 
     public void errorHandler(VolleyError error) {
-        Log.d("CALAAANDOOOOO",error.getMessage());
-        //Toast.makeText(this, "No hay cursos", Toast.LENGTH_SHORT).show();
+        //Log.d("CALAAANDOOOOO",error.getMessage());
+        Toast.makeText(this, "No hay cursos", Toast.LENGTH_SHORT).show();
     }
 }
