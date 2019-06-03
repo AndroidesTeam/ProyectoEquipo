@@ -84,7 +84,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p2_r1_np"
@@ -96,25 +97,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p2_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p2_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -144,7 +126,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black" />
 
                 <TextView
                     android:id="@+id/tv_p2_r2_np"
@@ -156,25 +139,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p2_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p2_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -204,7 +168,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p2_r3_np"
@@ -216,25 +181,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p2_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p2_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -264,7 +210,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p2_r4_np"
@@ -276,25 +223,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p2_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p2_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -342,7 +270,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p3_r1_np"
@@ -355,24 +284,6 @@
                     android:textSize="17dp" />
 
 
-                <EditText
-                    android:id="@+id/et_p3_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p3_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -402,7 +313,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p3_r2_np"
@@ -414,25 +326,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p3_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p3_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -462,7 +355,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p3_r3_np"
@@ -475,27 +369,7 @@
                     android:textSize="17dp" />
 
 
-                <EditText
-                    android:id="@+id/et_p3_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p3_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
-
             </TableRow>
-
             <TableRow
                 android:id="@+id/SeparadorP3_R4"
                 android:layout_width="fill_parent"
@@ -522,7 +396,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p3_r4_np"
@@ -534,25 +409,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p3_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p3_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -600,7 +456,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p4_r1_np"
@@ -612,25 +469,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p4_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p4_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -660,7 +498,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p4_r2_np"
@@ -672,25 +511,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p4_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p4_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -720,7 +540,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p4_r3_np"
@@ -732,25 +553,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p4_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p4_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -780,7 +582,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p4_r4_np"
@@ -792,25 +595,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p4_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p4_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -858,7 +642,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p5_r1_np"
@@ -870,25 +655,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p5_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p5_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -918,7 +684,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p5_r2_np"
@@ -930,25 +697,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p5_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p5_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -978,7 +726,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p5_r3_np"
@@ -990,25 +739,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p5_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p5_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1038,7 +768,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p5_r4_np"
@@ -1050,25 +781,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p5_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p5_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1116,7 +828,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p6_r1_np"
@@ -1128,25 +841,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p6_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p6_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1176,7 +870,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p6_r2_np"
@@ -1188,25 +883,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p6_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p6_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1236,7 +912,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p6_r3_np"
@@ -1248,25 +925,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p6_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p6_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1296,7 +954,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p6_r4_np"
@@ -1308,25 +967,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p6_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p6_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1374,7 +1014,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p7_r1_np"
@@ -1386,25 +1027,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p7_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p7_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1434,7 +1056,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p7_r2_np"
@@ -1446,25 +1069,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p7_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p7_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1494,7 +1098,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p7_r3_np"
@@ -1506,25 +1111,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p7_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p7_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1554,7 +1140,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p7_r4_np"
@@ -1566,25 +1153,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p7_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p7_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1632,7 +1200,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p8_r1_np"
@@ -1644,25 +1213,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p8_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p8_r1_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1692,7 +1242,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p8_r2_np"
@@ -1704,25 +1255,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p8_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p8_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1752,7 +1284,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p8_r3_np"
@@ -1764,25 +1297,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p8_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p8_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1812,7 +1326,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p8_r4_np"
@@ -1824,25 +1339,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p8_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p8_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1890,7 +1386,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p9_r2_np"
@@ -1902,25 +1399,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p9_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p9_r2_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -1950,7 +1428,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p9_r3_np"
@@ -1962,25 +1441,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p9_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p9_r3_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -2010,7 +1470,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p9_r4_np"
@@ -2022,25 +1483,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p9_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p9_r4_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
 
@@ -2070,7 +1512,8 @@
                     android:layout_weight="0.1"
                     android:background="@android:color/background_light"
                     android:enabled="false"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/background_dark" />
 
                 <TextView
                     android:id="@+id/tv_p9_r5_np"
@@ -2082,25 +1525,6 @@
                     android:textColor="@android:color/white"
                     android:textSize="17dp" />
 
-
-                <EditText
-                    android:id="@+id/et_p9_r5_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="0.1"
-                    android:background="@android:color/background_light"
-                    android:enabled="false"
-                    android:inputType="textPersonName" />
-
-                <TextView
-                    android:id="@+id/tv_p9_r5_porcen"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.05"
-                    android:text="@string/porcentaje"
-                    android:textColor="@android:color/white"
-                    android:textSize="17dp" />
 
             </TableRow>
         </TableLayout>
