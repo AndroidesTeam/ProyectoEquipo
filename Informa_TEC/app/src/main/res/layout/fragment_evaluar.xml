@@ -73,7 +73,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
+
                             android:text="@string/p2R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -133,7 +133,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p3R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -193,7 +192,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p4R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -253,7 +251,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p5R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -313,7 +310,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p6R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -373,7 +369,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p7R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -432,7 +427,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p8R1"
                             android:textSize="17dp" />
                         <RadioButton
@@ -491,7 +485,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="5dp"
-                            android:checked="true"
                             android:text="@string/p9R2"
                             android:textSize="17dp" />
                         <RadioButton
@@ -525,6 +518,7 @@
                 android:textSize="17dp"
                 android:textColor="@android:color/white"/>
             <EditText
+                android:id="@+id/comentario"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:inputType="textMultiLine"
@@ -537,6 +531,7 @@
                 android:gravity="center"
                 android:id="@+id/evaluar">
                 <Button
+                    android:id="@+id/evaluar2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Evaluar"
